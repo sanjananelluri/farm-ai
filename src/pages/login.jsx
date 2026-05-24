@@ -10,7 +10,7 @@ import {
   EyeIcon,
   EyeSlashIcon,
 } from "@heroicons/react/24/outline";
-function Login() {
+function login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -195,4 +195,4 @@ function Login() {
 
 }
 
-export default Login;
+export default login;

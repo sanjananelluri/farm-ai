@@ -6,7 +6,7 @@ import CropYield from "./components/CropYield/CropYield";
 import CropInfo from "./components/cropInfo/CropInfo";
 import Help from "./components/Help/Help";
 import CropFertilizer from "./components/CropFertilizer/CropFertilizer";
-import Login from "./pages/Login.jsx";
+import Login from "./pages/login.jsx";
 import Register from "./pages/Register.jsx";
 import Profile from "./pages/Profile.jsx";
 import ActivityHistory from "./pages/ActivityHistory.jsx";

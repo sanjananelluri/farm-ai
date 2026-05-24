@@ -868,14 +868,11 @@ const CropYield = () => {
     <div
       className="flex flex-col items-center justify-center  p-4 mt-20"
       style={style}
-      data-aos="fade-up"
-    >
+      data-aos="fade-up">
       <h2 className="text-2xl md:text-4xl mb-5">{t(["yieldPrediction"])} </h2>
-
       <form
         onSubmit={handleSubmit}
-        className="w-full md:max-w-lg bg-[#cdf1c7] shadow-md rounded px-8 pt-6 pb-8 mb-4"
-      >
+        className="w-full md:max-w-lg bg-[#cdf1c7] shadow-md rounded px-8 pt-6 pb-8 mb-4">
       {prediction && (
               <p>Predicted Yield: {prediction}kg</p>
       )}
@@ -888,8 +885,7 @@ const CropYield = () => {
           name="crop_name"
           type="text"
           placeholder={t(["crop_name_placeholder"])}
-          required
-        />
+          require/>
 
         <label
           for="season"
