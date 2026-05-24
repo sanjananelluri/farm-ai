@@ -820,35 +820,14 @@ const CropYield = () => {
     const area = e.target.area.value;
     const rainfall = e.target.rainfall.value;
     const Year =2024;
-
-
-    const data = {
-      crop_name,
-      season,
-      state,
-      district,
-      area,
-      rainfall,
-     
-      Year,
-    };
-
+    const data = {crop_name, season, state, district, area, rainfall, Year };
     const options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        crop_name,
-        season,
-        state,
-        district,
-        area,
-        rainfall,
-        state,
-      }),
+      body: JSON.stringify({ crop_name, season, state, district, area,rainfall, state,}),
     };
-
     try {
       const res = await fetch(
         "https://byte-verse-default-rtdb.firebaseio.com/CropYield.json",
@@ -858,7 +837,6 @@ const CropYield = () => {
     } catch (error) {
       console.error("Error submitting form:", error);
     }
-
     console.log(data);
     try {
       console.log(data);
@@ -881,8 +859,6 @@ const CropYield = () => {
       console.error("Error submitting form:", error);
     }
   };
-  
-
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);

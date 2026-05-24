@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   signInWithEmailAndPassword,
@@ -11,31 +10,20 @@ import {
   EyeIcon,
   EyeSlashIcon,
 } from "@heroicons/react/24/outline";
-
 function Login() {
-
   const navigate = useNavigate();
-
   const [email, setEmail] = useState("");
-
   const [password, setPassword] = useState("");
-
   const [showPassword, setShowPassword] = useState(false);
-
   const provider = new GoogleAuthProvider();
-
   const handleLogin = async (e) => {
-
     e.preventDefault();
-
     try {
-
       await signInWithEmailAndPassword(
         auth,
         email,
         password
       );
-
       navigate("/profile");
 
     } catch (error) {
