@@ -11,71 +11,47 @@ import Register from "./pages/Register.jsx";
 import Profile from "./pages/Profile.jsx";
 import ActivityHistory from "./pages/ActivityHistory.jsx";
 import SavedPredictions from "./pages/SavedPredictions.jsx";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom"
 export default function App() {
   return (
     <Routes>
       <Route
         path="/login"
-        element={<Login />}
-      />
+        element={<Login />}/>
       <Route
         path="/register"
-        element={<Register />}
-      />
+        element={<Register />}/>
       <Route
         path="/"
         element={<Layout />}>
-
         <Route
           index
-          element={<Home />}
-        />
-
+          element={<Home />}/>
         <Route
           path="croprecommendation"
-          element={<CropRecommendation />}
-        />
-
+          element={<CropRecommendation />}/>
         <Route
           path="cropyield"
-          element={<CropYield />}
-        />
-
+          element={<CropYield />}/>
         <Route
           path="cropinfo"
-          element={<CropInfo />}
-        />
-
+          element={<CropInfo />}/>
         <Route
           path="help"
-          element={<Help />}
-        />
-
+          element={<Help />}/>
         <Route
           path="crop-fertilizer"
-          element={<CropFertilizer />}
-        />
-
+          element={<CropFertilizer />}/>
         <Route
           path="profile"
-          element={<Profile />}
-        />
-
+          element={<Profile />}/>
         <Route
           path="activity"
-          element={<ActivityHistory />}
-        />
-
+          element={<ActivityHistory />}/>
         <Route
           path="saved-predictions"
-          element={<SavedPredictions />}
-        />
-
+          element={<SavedPredictions />}/>
       </Route>
-
     </Routes>
-
   );
-
 }
