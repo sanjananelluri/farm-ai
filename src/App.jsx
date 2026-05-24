@@ -6,11 +6,11 @@ import CropYield from "./components/CropYield/CropYield";
 import CropInfo from "./components/cropInfo/CropInfo";
 import Help from "./components/Help/Help";
 import CropFertilizer from "./components/CropFertilizer/CropFertilizer";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Profile from "./pages/Profile";
-import ActivityHistory from "./pages/ActivityHistory";
-import SavedPredictions from "./pages/SavedPredictions";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
+import Profile from "./pages/Profile.jsx";
+import ActivityHistory from "./pages/ActivityHistory.jsx";
+import SavedPredictions from "./pages/SavedPredictions.jsx";
 import { Route, Routes } from "react-router-dom";
 export default function App() {
   return (
